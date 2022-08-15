@@ -1,23 +1,34 @@
 body{
-    width: 1366px;
+    width: 75%;
     margin: 0 auto;
-    background: rgb(40 41 80);
+    background: #456887;
     font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
 }
+.menu_label{
+    display: none;
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+.button-menu{
+    display: none;
+}
+.container-menu{
+    display: flex;
+    align-items: center;
 }
 .lista-enlaces{
     display: flex;
-    margin: 0 0 0 250px
 }
 .lista-enlaces li{
     list-style: none;
-    margin: 50px 20px;
+    margin: 50px 0px 50px 20px;
     font-size: 20px;
 }
 .lista-enlaces li a{
@@ -31,7 +42,7 @@ a{
 }
 .lista-redes{
     display: flex;
-    align-items: center;
+    padding-left: 50px;
 }
 .animacionLogo{
     list-style: none;
@@ -67,22 +78,51 @@ a{
     font-size: 2.5em;
     color: rgba(255, 255, 255, 0.217);
     line-height: 0.8em;
-    margin-top: 1em;
+    margin: 1em 0;
 }
+.btn-pdf{
+    width: 250px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 1px;
+    background: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn-pdf a{
+    color: #000;
+}
+.btn-pdf a:hover, .btn-pdf:hover{
+    color: #fefefe;
+    background: #273644;
+}
+/* PDF */
+.containerPDF{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.pdf-style{
+    width: 100%;
+    height: 100vh;   
+}
+/* PDF */
 .imgFotoPerfil{
     position: absolute;
     right: 0;
     margin: 150px 0;
-    
 }
 .imgFotoPerfil img{
-    box-shadow: rgba(39, 40, 131, 0.3) 5px 5px, 
-    rgba(39, 40, 131, 0.3) 10px 10px, 
-    rgba(39, 40, 131, 0.2) 15px 15px, 
-    rgba(39, 40, 131, 0.1) 20px 20px, 
-    rgba(39, 40, 131, 0.05) 25px 25px,
-    rgba(39, 40, 131, 0.05) 30px 30px,
-    rgba(39, 40, 131, 0.05) 35px 35px;
+    box-shadow: rgba(38, 77, 113, 0.3) 5px 5px, 
+    rgba(38, 77, 133, 0.3) 10px 10px, 
+    rgba(38, 77, 133, 0.2) 15px 15px, 
+    rgba(38, 77, 133, 0.1) 20px 20px, 
+    rgba(38, 77, 133, 0.05) 25px 25px,
+    rgba(38, 77, 133, 0.05) 30px 30px,
+    rgba(38, 77, 133, 0.05) 35px 35px,
+    rgba(38, 77, 133, 0.05) 40px 40px,
+    rgba(38, 77, 133, 0.05) 45px 45px,
+    rgba(38, 77, 133, 0.05) 50px 50px,
+    rgba(38, 77, 133, 0.05) 55px 55px;
     border-radius: 25% 10%;
 }
 /* AboutMe */
@@ -92,6 +132,14 @@ a{
 .containerAboutMe h2{
     font-size: 4em;
     color: #fff;
+}
+.aboutME-text{
+    font-size: 1.5em;
+    color: #cdcdcd;
+    margin: 40px 0;
+    padding: 55px;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .containerAnimation ul{
     list-style: none;
@@ -108,70 +156,104 @@ a{
 .containerAnimation li a{
     color: #fff;
 }
-.showTraining{
-    display: none;
-    flex-direction: column;
-    margin: 30px 200px;
+.containerSkills h3{
+    font-size: 4em;
+    color: white;
 }
-.training1{
+.containerSkills{
+    margin: 200px 100px;
+}
+.showSkills {
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 50px;
 }
-.imgTraining{
+
+.skillsH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+}
+.skillsH img{
+    width: 150px;
+    height: 150px;
+}
+
+.containerSeccion{
+    margin: 200px 100px;
+}
+.containerListaSoftSkills{
+    margin: 100px 0;
+}
+.ulSoftSkills{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.ulSoftSkills li{
+    font-size: 1.3em;
+    padding: 20px 30px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ulSoftSkills li:hover{
+    background: #213e61;   
+}
+.containerListaHobbies{
+    margin: 100px 0;
+}
+.ulHobbies{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.ulHobbies li{
+    font-size: 1.3em;
+    padding: 20px 50px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ulHobbies li:hover{
+    background: #213e61;   
+}
+.containerFormacion{
+    padding: 0 100px;
+}
+.tituloSeccion {
+    font-size: 4em;
+    color: white;
+}
+.seccion-formacion{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+.tarjeta-formacion{
+    display: flex;
+    align-items: center;
+}
+.imgFormacion{
     width: 100px;
     height: 100px;
 }
-.info-training{
+.info-formacion{
     margin: 40px;
     color: rgb(186, 186, 186);
 }
-.info-training h3{
+.info-formacion h3{
     color: rgb(224, 224, 224);
     font-size: 1.5em;
 }
-.showSkills {
-    display: grid;
-    margin: 50px auto;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, minmax(150px, 150px));
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-.showSkills img{
-    display: flex;
-    margin: 0 0 15px 0;
-}
-.gridOne{
-    grid-column: 1;
-    grid-row: 1;
-}
-.gridTwo{
-    grid-column: 2;
-    grid-row: 1;
-}
-.gridThree{
-    grid-column: 3;
-    grid-row: 1;
-}
-.gridFour{
-    grid-column: 1;
-    grid-row: 2;
-}
-.gridFive{
-    grid-column: 2;
-    grid-row: 2;
-}
-.gridSix{
-    grid-column: 3;
-    grid-row: 2;
-}
-.gridSeven{
-    grid-column: 1;
-    grid-row: 3;
-}
+/* seccionproyectos */
 .containerProjects{
     margin-top: 200px;
 }
@@ -211,14 +293,14 @@ a{
 .moreproject{
     grid-column: 1;
     grid-row: 9/12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.moreproject p{
+.moreproject a{
     color: #fff;
     font-size: 1.5em;
     text-transform: uppercase;
-    height: 100%;
-    margin: 25%;
-    cursor: pointer;
 }
 .imgWeb{
     height: 100%;
@@ -236,18 +318,19 @@ a{
 .imgANDform{
     display: flex;
 }
-.imgANDform img{
+.imgContactarme{
+    width: 50%;
     border-radius: 3px;
     padding-right: 10px;
     transition: 0.8s;
     filter: opacity(.5);
 }
-.imgANDform img:hover{
+.imgContactarme:hover{
     filter: opacity(1);
     transition: 1s;
 }
 .conteiner-form{
-    width: 100%;
+    width: 50%;
     padding-left: 10px;
 }
 form{
@@ -274,7 +357,7 @@ input{
     display: flex;
     justify-content: flex-end;
 }
-button{
+.button-form{
     width: 250px;
     padding: 10px 0;
     text-transform: uppercase;
@@ -311,7 +394,6 @@ button:hover{
     right: 0;
     position: absolute;
 }
-
 .containerRedes{
     display: flex;
     position: relative;
@@ -320,9 +402,19 @@ button:hover{
     position: absolute;
     right: 0;
 }
+.lista-redes-footer {
+    display: flex;
+}
+.animacionLogoFooter{
+    list-style: none;
+    margin: 10px;
+    width: 40px;
+}
+.animacionLogoFooter:hover{
+    transform: scale(1.2);
+}
 .containerEmail{
     margin: 0 0 0 270px;
-    
 }
 .containerEmail p{
     font-size: 20px;
@@ -336,4 +428,350 @@ button:hover{
 }
 .containerEmail a:hover{
     color: rgba(255, 255, 255, 0.464);
+}
+/* Desing Responsive */
+
+@media only screen and (max-width: 1840px){
+    .containerWelcome h1{
+        font-size: 10em;
+        letter-spacing: -8px;
+    }
+    .containerWelcome h2{
+        font-size: 8em;
+        letter-spacing: -6px;
+    }
+    .containerWelcome p{
+        font-size: 2em;
+    }
+    .imgFotoPerfil img{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1550px){
+    .containerWelcome h1{
+        font-size: 9em;
+        letter-spacing: -8px;
+    }
+    .containerWelcome h2{
+        font-size: 7em;
+        letter-spacing: -6px;
+    }
+    .containerWelcome p{
+        font-size: 2em;
+    }
+    .imgFotoPerfil img{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 1470px){
+    body{
+        width: 80%;
+    }
+    .lista-redes{
+        display: none;
+    }
+    .seccion-formacion{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1290px){
+    .containerWelcome h1{
+        font-size: 8em;
+        letter-spacing: -6px;
+    }
+    .containerWelcome h2{
+        font-size: 5em;
+        letter-spacing: -2px;
+    }
+    .containerWelcome p{
+        font-size: 2em;
+    }
+    .imgFotoPerfil img{
+        width: 300px;
+    }
+    .showSkills{
+        justify-content: initial;
+        flex-wrap: wrap;
+        line-height: 50px;
+    }
+    .ulSoftSkills{
+        flex-wrap: wrap;
+    }
+    .ulSoftSkills li{
+        margin: 10px;
+    }
+    .ulHobbies{
+        flex-wrap: wrap;
+    }
+    .ulHobbies li{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    body{
+        width: auto;
+        margin: 0 20px 20px 20px;
+        padding: 0;
+    }
+    .imgFotoPerfil img{
+        width: 300px;
+    }
+    .seccion-formacion{
+        height: auto;
+    }
+    .contactForm h2{
+        margin: 0 50px;
+    }
+    .imgANDform{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .imgContactarme{
+        width: 100%;
+    }
+    .conteiner-form{
+        margin-top: 50px ;
+        width: 100%;
+    }
+}
+
+/* APARECE EL MENU */
+@media only screen and (max-width: 900px){
+    body{
+        width: auto;
+        margin: 0 20px 20px 20px;
+        padding: 0;
+    }
+    .logoPersonal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #456887;
+        padding: 20px 0;
+    }
+    .button-menu{
+        display: block;
+    }
+    .container-menu{
+        align-items: initial;
+    }
+    .nav-bar{
+        display: block;
+        z-index: 1;
+        position: fixed;
+        width: calc(100% - 8.5%);
+    }
+    .nav_img{
+        width: 55px;
+        outline: none;
+        border: 0;
+    }
+    .nav_img:hover{
+        cursor: pointer;
+    }
+    .lista-enlaces{
+        flex-direction: column;
+        background: #273644;
+        position: fixed;
+        width: calc(100% - 8.5%);
+        height: calc(100% - 192px);
+        left: 100%;
+    }
+    .lista-redes {
+        display: flex;
+        justify-content: center;
+        background: #c3c3c3;
+        border-top: 3px solid #456887;
+        bottom: 0;
+        left: 100%;
+        position: fixed;
+        height: 107px;
+        width: calc(100% - 8.5%);
+        align-items: center;
+        padding-left: 0;
+    }
+    .lista-enlaces{
+        text-align: center;
+        margin: 0;
+    }
+    .lista-enlaces li a{
+        color: #9d9d9d;
+    }
+    .nav-menu_visible{
+        left: 4%;
+    }
+    .button-menu{
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+    }
+    .button-menu:focus:not(:focus-visible){
+        outline: none;
+    }
+    .imgFotoPerfil{
+        display: none;
+    }
+    .containerWelcome{
+        width: auto;
+        padding: 100px 20px;
+    }
+    .containerWelcome h1 {
+        letter-spacing: -2px;
+        font-size: 8em;
+    }
+    .containerWelcome h2 {
+        letter-spacing: -2px;
+        font-size: 6em;
+    }
+    .containerWelcome p{
+        font-size: 2em;
+    }
+    .containerAboutMe{
+        margin: 0;
+        width: 100%;
+    }
+    .negrita{
+        color: rgb(48, 48, 48);
+    }
+    .containerSeccion{
+        margin: 200px 0;
+    }
+    .ulSoftSkills{
+        flex-direction: column;
+    }
+    .ulSoftSkills li{
+        margin: 20px 0;
+    }
+    .ulHobbies{
+        flex-direction: column;
+    }
+    .ulHobbies li{
+        margin: 20px 0;
+    }
+    .containerSkills{
+        margin: 200px 0;
+    }
+    .containerSkills h3{
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    .showSkills{
+        flex-direction: column;
+    }
+    .skillsH img{
+        width: 200px;
+        height: 200px;
+    }
+    .containerFormacion{
+        width: 100%;
+        margin: 0;
+    }
+    .tituloSeccionFormacion{
+        text-align: center;
+        font-size: 3.5em;
+    }
+    .imgFormacion{
+        display: none;
+    }
+    .seccion-formacion{
+        height: auto;
+        margin: 20px 0;
+    }
+    .titleproject h2{
+        display: block;
+        margin: 0 auto;
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+    .tituloFormacion{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .firstproject{
+        background: transparent;
+        margin: 10px 0 ;
+    }
+    .secondproject{
+        background: transparent;
+        margin: 10px 0 ;
+    }
+    .thirdproject{
+        background: transparent;
+        margin: 10px 0 ;
+    }
+    .moreproject a{
+        font-size: 1em;
+    }
+    .f-project{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteiner-form{
+        padding-left: 0;
+    }
+    .contactForm h2{
+        font-size: 2.5em;
+        margin: 50px 0;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .info-formacion{
+        border: 1px solid #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 3px;
+        padding: 15px;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .fechaFormacion{
+        margin: 9px 0 0 0;
+    }
+    .containerProjects{
+        margin: 150px 0;
+    }
+    .imgANDform img{
+        display: none;
+    }
+    .contactForm button{
+        width: 100%;
+    }
+    .copyright{
+        position: initial;
+        font-size: 10px;
+        margin: 0;
+    }
+    .containerEmail{
+        display: none;
+    }
+    .containerFooter{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+    .containerlistaRedes{
+        position: initial;
+    }
+    .containerEnlaces{
+        position: initial;
+    }
+    #enlaces-footer{
+        display: none;
+    }
+}
+@media only screen and (max-width: 670px){
+    .containerWelcome h1{
+        font-size: 5em;
+    }
+    .containerWelcome h2{
+        font-size: 5em;
+    }
+    .btn-pdf{
+        width: 100%;
+        padding: 20px;
+        margin: 150px 0;
+    }
 }

@@ -12,7 +12,7 @@
     <!-- FORMATO LETRAS -->
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/79be353c37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/normalize.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
@@ -20,143 +20,170 @@
 <body>
     <header>
         <div class="nav-bar">
-            <ul class="lista-enlaces">
-                <li><a href="#aboutME" id="aboutMeEnlace">About Me</a></li>
-                <li><a href="#aboutME" id="trainigEnlace">Training</a></li>
-                <li><a href="" id="hobbiesEnlace">Hobbies</a></li>
-                <li><a href="#section-project">Projects</a></li>
-                <li><a href="#section-contactme">Contact me</a></li>
-            </ul>
-            <ul class="lista-redes">
-                <li class="animacionLogo"><a href="https://www.linkedin.com/in/santiago-maza-b6a0251aa/"><img src="style/img/icon-linkedin.png"></a></li>
-                <li class="animacionLogo"><a href="https://github.com/EmAMaz"><img src="style/img/icon-github.png" ></a></li>
-            </ul>
+            <div class="logoPersonal">
+                <img class="logoPersonal-img" src="style/img/logoPersonal2.png" alt="">
+            
+                <button class="button-menu">
+                    <img src="assets/menu.svg" class="nav_img">
+                </button> 
+            </div>
+            <div class="container-menu">
+                <ul class="lista-enlaces">
+                    <li><a href="#container-sobremi">Sobre mi</a></li>
+                    <li><a href="#container-formacion">Formación</a></li>
+                    <li><a href="#container-hobbies">Hobbies</a></li>
+                    <li><a href="#section-project">Proyectos</a></li>
+                    <li><a href="#section-contactme">Contacto</a></li>
+                </ul>
+                <ul class="lista-redes">
+                    <li class="animacionLogo"><a href="https://www.linkedin.com/in/santiago-maza-b6a0251aa/"><img src="style/img/icon-linkedin.png"></a></li>
+                    <li class="animacionLogo"><a href="https://github.com/EmAMaz"><img src="style/img/icon-github.png" ></a></li>
+                </ul>
+            </div>
         </div>
     </header>
-
+    
     <main>
         <div class="containerWelcome" >
             <h1>Santiago</h1>
             <h2>Maza</h2>
             <p>Bienvenido a mi Portfolio Web</p>
+            <a href="pdf.html"><button class="btn-pdf">Ver mi CV</button></a>
             <div class="imgFotoPerfil"> 
-                <img src="style/img/fotoPerfil.jpg" alt="">
+                <img src="style/img/fotoPerfil.jpg">
             </div>
         </div>
-
-        <div class="containerAboutMe" id="aboutME" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <h2>About Me</h2>
-            <div class="containerAnimation">
-                <ul>
-                    <li id="Skills" class="one"><a href="#asd" id="aSkill">Skills</a></li>
-                    <li id="Training" class="two"><a href="#asd" id="aTraining">Formación</a></li>
-                    <li id="Hobbies" class="three"><a href="#dsa" id="aHobbies">Hobbies</a></li>
+ 
+        <section class="containerAboutMe" id="container-sobremi" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <h2 class="tituloSeccion">Sobre mí</h2>
+            <div class="aboutME-text">
+                <p>Hola mi nombre es Emanuel Santiago Maza, tengo 19 años , soy de Bs.As(Argentina) y soy un <b class="negrita">Desarrollador Web Jr</b> con aspiracion a ser un <b class="negrita">Full Stack</b>, actualmente me estoy formando en varios cursos de manera online.. <br>
+                <br>
+                Descubri todo este mundo gracias a la pandemia y desde ahí no pude parar de aprender acerca de esta industria y muy puntualmente del desarrollo web  💻. <br>
+                <br>
+                También e aprendido a poder ver a los grandes problemas, en pequeños problemitas que tiene solucion.
+                </p>
+            </div>
+        </section>
+        
+        <section class="containerSeccion" data-aos="fade-up">
+            <h3 class="tituloSeccion">Skills</h3>
+            <div class="showSkills">
+                <div class="skillsH"><img src="style/img/skills/background1.svg" alt="logoHTML"><p>HTML</p></div>
+                <div class="skillsH"><img src="style/img/skills/background2.svg" alt="logoCSS"><p>CSS</p></div>
+                <div class="skillsH"><img src="style/img/skills/bootstrap.png" alt="logoBOOTSTRAP"><p>BOOTSTRAP</p></div>
+                <div class="skillsH"><img src="style/img/skills/javascript.png" alt="logoJAVASRIPT"><p>JAVASCRIPT</p></div>
+                <div class="skillsH"><img src="style/img/skills/react.png" alt="logoREACT"><p>REACT</p></div>
+                <div class="skillsH"><img src="style/img/skills/java.png" alt="logoJAVA"><p>JAVA</p></div>
+                <div class="skillsH"><img src="style/img/skills/mysql.jfif" alt="logoMYSQL"><p>MYSQL</p></div>   
+            </div>
+        </section>
+        <section class="containerSeccion" data-aos="fade-up">
+            <h3 class="tituloSeccion">Soft Skills</h3>
+            <article class="containerListaSoftSkills">
+                <ul class="ulSoftSkills">
+                    <li>Compañerismo</li>
+                    <li>Empatía</li>
+                    <li>Liderazgo</li>
+                    <li>Productivo</li>
+                    <li>Comunicacion</li>
                 </ul>
-            </div>
-        </div>
-        <div class="containerAboutme" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="imgAboutme">
-                <img src="" alt="">
-            </div>
-
-            <div id="showSkills" class="showSkills">
-                <div class="gridOne"><img src="style/img/skills/background1.svg" alt="logoHTML">HTML </div>
-                <div class="gridTwo"><img src="style/img/skills/background2.svg" alt="logoCSS">CSS</div>
-                <div class="gridThree"><img src="style/img/skills/bootstrap.png" alt="logoBOOTSTRAP">BOOTSTRAP</div>
-                <div class="gridFour"><img src="style/img/skills/javascript.png" alt="logoJAVASRIPT">JAVASCRIPT</div>
-                <div class="gridFive"><img src="style/img/skills/react.png" alt="logoREACT">REACT</div>
-                <div class="gridSix"><img src="style/img/skills/java.png" alt="logoJAVA">JAVA</div>
-                <div class="gridSeven"><img src="style/img/skills/mysql.jfif" alt="logoMYSQL">MYSQL</div>
-            </div>
-            <div id="showTraining" class="showTraining">
-                <div class="training1">
-                    <a href="https://www.aluracursos.com/"><img src="style/img/alura.svg" alt="" class="imgTraining"></a>
-                    <div class="info-training">
-                        <h3>Alura</h3>
-                        <p>Abril2022 - Hoy</p>
+            </article>
+        </section>
+        <section class="containerSeccion" data-aos="fade-up">
+            <h3 class="tituloSeccion">Hobbies</h3>
+            <article class="containerListaHobbies">
+                <ul class="ulHobbies">
+                    <li>Programar 💻</li>
+                    <li>YouTube 📹</li>
+                    <li>Ver Series 🎭</li>
+                    <li>Jugar al Futbol ⚽</li>
+                </ul>
+            </article>
+        </section>
+        <section class="containerSeccion" id="container-formacion" data-aos="fade-up">
+            <h3 class="tituloSeccion">Formacion</h3>
+            <div class="seccion-formacion">
+                <div class="tarjeta-formacion">
+                    <a class="imgFormacion" href="https://www.aluracursos.com/"><img src="style/img/alura.svg" alt="" class="imgFormacion"></a>
+                    <div class="info-formacion">
+                        <a class="tituloFormacion" href="https://www.aluracursos.com/"><h3>Alura</h3></a>
+                        <p class="fechaFormacion">Abril2022 - Hoy</p>
                         <p>Estudiante del Programa ONE(Oracle Next Education)</p>
                     </div>
                 </div>
-                
-                <div class="training1">
-                    <a href="https://www.oracle.com/"><img src="style/img/ora.png" alt="" class="imgTraining"></a>
-                    <div class="info-training">
-                        <h3>Oracle</h3>
-                        <p>Abril2022 - Hoy</p>
+                <div class="tarjeta-formacion">
+                    <a class="imgFormacion" href="https://www.oracle.com/"><img src="style/img/ora.png" alt="" class="imgFormacion"></a>
+                    <div class="info-formacion">
+                        <a class="tituloFormacion" href="https://www.oracle.com/"><h3>Oracle</h3></a>
+                        <p class="fechaFormacion">Abril2022 - Hoy</p>
                         <p>Estudiante del Programa ONE(Oracle Next Education)</p>
                     </div>
                 </div>
-                
-                <div class="training1">
-                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img src="style/img/channels4_profile.jpg" alt="" class="imgTraining"></a>
-                    <div class="info-training">
-                        <h3>Argentina Programa</h3>
-                        <p>Mayo2022 - Hoy</p>
+                <div class="tarjeta-formacion">
+                    <a class="imgFormacion" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img src="style/img/channels4_profile.jpg" alt="" class="imgFormacion"></a>
+                    <div class="info-formacion">
+                        <a class="tituloFormacion" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><h3>Argentina Programa</h3></a>
+                        <p class="fechaFormacion">Mayo2022 - Hoy</p>
                         <p>Estudiante del Proyecto Argentina Programa</p>
                     </div>
                 </div>
-                <div class="training1">
-                    <a href="https://www.freecodecamp.org/learn"><img src="style/img/freecodecamp.png" alt="" class="imgTraining"></a>
-                    <div class="info-training">
-                        <h3>FreeCodeCamp</h3>
-                        <p>Enero2022 - Hoy</p>
+                <div class="tarjeta-formacion">
+                    <a class="imgFormacion" href="https://www.freecodecamp.org"><img src="style/img/freecodecamp.png" alt="" class="imgFormacion"></a>
+                    <div class="info-formacion">
+                        <a class="tituloFormacion" href="https://www.freecodecamp.org"><h3>Free Code Camp</h3></a>
+                        <p class="fechaFormacion">Enero2022 - Hoy</p>
                         <p>Estudiante del Proyecto Argentina Programa</p>
                     </div>
                 </div>
             </div>
-            
-        </div>
-
-
-        <div id="section-project" class="containerProjects" data-aos="fade-up"
-        data-aos-duration="2500" data-aos-anchor-placement="top-bottom">
+        </section>    
+        
+        <section id="section-project" class="containerProjects" data-aos-duration="2500" data-aos-anchor-placement="top-bottom">
             <div class="f-project">
-                <div class="titleproject"><h2>Project</h2></div>
+                <div class="titleproject"><h2>Proyectos Destacados</h2></div>
                 <div class="firstproject" data-aos="zoom-in"><a href="https://emamaz.github.io/encriptador/"><img src="style/img/encriptadorWeb.png" class="imgWeb"></a></div>
                 <div class="secondproject" data-aos="zoom-in"><a href="https://emamaz.github.io/portfolio/"><img src="style/img/portfolioFirst.png" class="imgWeb"></a></div>
                 <div class="thirdproject" data-aos="zoom-in"><a href="https://emamaz.github.io/juegodelahorcado/"><img src="style/img/juegodelahorcado.png" class="imgWeb"></a></div>
-                <div class="moreproject"><p>See more works ⮕</p></div>
+                <div class="moreproject"><a href="https://github.com/EmAMaz?tab=repositories">Ver más trabajos ⮕</a></div>
             </div>
             
-        </div>
+        </section>
 
-        <div id="section-contactme" class="contactForm" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <h2>Contact me</h2>
-            <section class="imgANDform">
-                
-                    <img src="style/img/manos-escribiendo.jpg" alt="Persona escribiendo en un teclado">
-                
+        <section id="section-contactme" class="contactForm" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <h2 class="tituloSeccion">Contáctame</h2>
+            <article class="imgANDform">
+                <img src="style/img/manos-escribiendo.jpg" alt="Persona escribiendo en un teclado" class="imgContactarme">
                 <div class="conteiner-form">
-                    <form action="" class="formulario">
+                    <form action="" class="formulario" id="formulario">
                         
                         <label for="" class="titulo">Nombre</label>
-                        <input type="text" required>
+                        <input id="nombre" type="text" required>
             
                         <label for="">Email</label>
-                        <input type="text" required>
+                        <input id="email" type="email" required>
             
-                        <label for="">Teléfono (opcional)</label>
-                        <input type="text">
-            
-                        <label for="">Mensaje (opcional)</label>
-                        <textarea name="" id="" cols="70" rows="8"></textarea>
-            
-                        <div class="containerButton">
-                            <button type="submit">Enviar</button>
-                        </div>
+                        <label for="">Asunto</label>
+                        <input id="asunto" type="text" required>
+    
+                        <label for="">Mensaje</label>
+                        <textarea id="mensaje" cols="70" rows="8" required></textarea>
+        
+                        <button type="submit" class="button-form">Enviar</button>
                     </form>
                 </div>
-            </section>
-        </div>
+            </articule>
+        </section>
     </main>
+
     <footer class="containerFooter">
             <div class="containerEnlaces">
-                    <ul class="lista-enlaces">
-                        <li><a href="#aboutME" id="aboutMeEnlace">About Me</a></li>
-                        <li><a href="#aboutME" id="trainigEnlace">Training</a></li>
-                        <li><a href="" id="hobbiesEnlace">Hobbies</a></li>
-                        <li><a href="#section-project">Projects</a></li>
-                        <li><a href="#section-contactme">Contact me</a></li>
+                    <ul class="lista-enlaces" id="enlaces-footer">
+                        <li><a href="#container-sobremi">Sobre mi</a></li>
+                        <li><a href="#container-formacion">Formación</a></li>
+                        <li><a href="#container-hobbies">Hobbies</a></li>
+                        <li><a href="#section-project">Proyectos</a></li>
+                        <li><a href="#section-contactme">Contacto</a></li>          
                     </ul>
                 <div class="copyright">
                     <p>2022 &#169 Santiago Maza.<br> Todos los derechos reservados.</p>
@@ -165,23 +192,23 @@
             <div class="containerRedes">
                 
                 <div class="containerlistaRedes">
-                    <ul class="lista-redes">
-                        <li class="animacionLogo"><a href="https://www.linkedin.com/in/santiago-maza-b6a0251aa/"><img src="style/img/icon-linkedin.png"></a></li>
-                        <li class="animacionLogo"><a href="https://github.com/EmAMaz"><img src="style/img/icon-github.png"></a></li>
+                    <ul class="lista-redes-footer">
+                        <li class="animacionLogoFooter"><a href="https://www.linkedin.com/in/santiago-maza-b6a0251aa/"><img src="style/img/icon-linkedin.png"></a></li>
+                        <li class="animacionLogoFooter"><a href="https://github.com/EmAMaz"><img src="style/img/icon-github.png"></a></li>
                     </ul>
                 </div>
                 <div class="containerEmail">
-                    <p>Do you have a question? Sendme it here: <br> <a href="mailto:santiagomaza33@gmail.com?Subject=Hola Santiago">santiagomaza33@gmail.com</a></p>
+                    <p>Tienes alguna pregunta? Envíamela aquí: <br> <a href="mailto:santiagomaza33@gmail.com?Subject=Poner asunto aquí">santiagomaza33@gmail.com</a></p>
                 </div>
             </div>
             
     </footer>
 
-    <script src="js/event.js"></script>
-
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
 </html>
+
